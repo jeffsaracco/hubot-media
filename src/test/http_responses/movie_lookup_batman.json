@@ -1,0 +1,372 @@
+[
+  {
+    "title": "Batman",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker, who has seized control of Gotham's underworld.",
+    "inCinemas": "1989-06-23T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/kBf3g9crrADGMc2AMAMlLBgSm2h.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/kBf3g9crrADGMc2AMAMlLBgSm2h.jpg",
+    "year": 1989,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 268,
+    "titleSlug": "batman-268",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 3240,
+      "value": 7.1
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "Batman",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "The Dynamic Duo faces four super-villains who plan to hold the world for ransom with the help of a secret invention that instantly dehydrates people.",
+    "inCinemas": "1966-07-30T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/udDVJXtAFsQ8DimrXkVFqy4DGEQ.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/udDVJXtAFsQ8DimrXkVFqy4DGEQ.jpg",
+    "year": 1966,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 2661,
+    "titleSlug": "batman-2661",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 315,
+      "value": 6.2
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "Batman Begins",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman begins",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+    "inCinemas": "2005-06-10T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/dr6x4GyyegBWtinPBzipY02J2lV.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/dr6x4GyyegBWtinPBzipY02J2lV.jpg",
+    "year": 2005,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 272,
+    "titleSlug": "batman-begins-272",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 10579,
+      "value": 7.6
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "Batman Returns",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman returns",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "Having defeated the Joker, Batman now faces the Penguin - a warped and deformed individual who is intent on being accepted into Gotham society. Crooked businessman Max Schreck is coerced into helping him become Mayor of Gotham and they both attempt to expose Batman in a different light. Selina Kyle, Max's secretary, is thrown from the top of a building and is transformed into Catwoman - a mysterious figure who has the same personality disorder as Batman. Batman must attempt to clear his name, all the time deciding just what must be done with the Catwoman.",
+    "inCinemas": "1992-06-19T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/jX5THE1yW3zTdeD9dupcIyQvKiG.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/jX5THE1yW3zTdeD9dupcIyQvKiG.jpg",
+    "year": 1992,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 364,
+    "titleSlug": "batman-returns-364",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 2634,
+      "value": 6.7
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "Batman & Robin",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman robin",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "Along with crime-fighting partner Robin and new recruit Batgirl, Batman battles the dual threat of frosty genius Mr. Freeze and homicidal horticulturalist Poison Ivy. Freeze plans to put Gotham City on ice, while Ivy tries to drive a wedge between the dynamic duo.",
+    "inCinemas": "1997-06-20T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/79AYCcxw3kSKbhGpx1LiqaCAbwo.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/79AYCcxw3kSKbhGpx1LiqaCAbwo.jpg",
+    "year": 1997,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 415,
+    "titleSlug": "batman-robin-415",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 2233,
+      "value": 4.2
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "Batman Forever",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman forever",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "The Dark Knight of Gotham City confronts a dastardly duo: Two-Face and the Riddler. Formerly District Attorney Harvey Dent, Two-Face believes Batman caused the courtroom accident which left him disfigured on one side. And Edward Nygma, computer-genius and former employee of millionaire Bruce Wayne, is out to get the philanthropist; as The Riddler. Former circus acrobat Dick Grayson, his family killed by Two-Face, becomes Wayne's ward and Batman's new partner Robin.",
+    "inCinemas": "1995-06-16T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/eTMrHEhlFPHNxpqGwpGGTdAa0xV.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/eTMrHEhlFPHNxpqGwpGGTdAa0xV.jpg",
+    "year": 1995,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 414,
+    "titleSlug": "batman-forever-414",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 2328,
+      "value": 5.3
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "The Lego Batman Movie",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "lego batman movie",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "In the irreverent spirit of fun that made “The Lego Movie” a worldwide phenomenon, the self-described leading man of that ensemble—Lego Batman—stars in his own big-screen adventure. But there are big changes brewing in Gotham, and if he wants to save the city from The Joker’s hostile takeover, Batman may have to drop the lone vigilante thing, try to work with others and maybe, just maybe, learn to lighten up.",
+    "inCinemas": "2017-02-08T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/1pHOqpdCYNmtRVJs6pGKQKttrPm.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/1pHOqpdCYNmtRVJs6pGKQKttrPm.jpg",
+    "year": 2017,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 324849,
+    "titleSlug": "the-lego-batman-movie-324849",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 2410,
+      "value": 7.2
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "Batman Ninja",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman ninja",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "Gorilla Grodd's time displacement machine transports many of Batman's worst enemies to feudal Japan, along with the Dark Knight and a few of his allies.",
+    "inCinemas": "2018-04-24T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/5xSB0Npkc9Fd9kahKBsq9P4Cdzp.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/5xSB0Npkc9Fd9kahKBsq9P4Cdzp.jpg",
+    "year": 2018,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 485942,
+    "titleSlug": "batman-ninja-485942",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 176,
+      "value": 5.7
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "Batman v Superman: Dawn of Justice",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman v superman dawn justice",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+    "inCinemas": "2016-03-23T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/cGOPbv9wA5gEejkUN892JrveARt.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/cGOPbv9wA5gEejkUN892JrveARt.jpg",
+    "year": 2016,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 209112,
+    "titleSlug": "batman-v-superman-dawn-of-justice-209112",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 10491,
+      "value": 5.8
+    },
+    "qualityProfileId": 0
+  },
+  {
+    "title": "Batman and Harley Quinn",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "batman harley quinn",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "Batman and Nightwing are forced to team with the Joker's sometimes-girlfriend Harley Quinn to stop a global threat brought about by Poison Ivy and Jason Woodrue, the Floronic Man.",
+    "inCinemas": "2017-08-14T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/dPsjte846EcEWQpfMmGHrTWIJd8.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/dPsjte846EcEWQpfMmGHrTWIJd8.jpg",
+    "year": 2017,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 408648,
+    "titleSlug": "batman-and-harley-quinn-408648",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 235,
+      "value": 5.8
+    },
+    "qualityProfileId": 0
+  }
+]

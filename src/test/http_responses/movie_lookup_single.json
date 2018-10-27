@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Happy Gilmore",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "happy gilmore",
+    "sizeOnDisk": 0,
+    "status": "released",
+    "overview": "Failed hockey player-turned-golf whiz Happy Gilmore -- whose unconventional approach and antics on the grass courts the ire of rival Shooter McGavin -- is determined to win a PGA tournament so he can save his granny's house with the prize money. Meanwhile, an attractive tour publicist tries to soften Happy's image.",
+    "inCinemas": "1996-02-16T00:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "http://image.tmdb.org/t/p/original/4RnCeRzvI1xk5tuNWjpDKzSnJDk.jpg"
+      }
+    ],
+    "downloaded": false,
+    "remotePoster": "http://image.tmdb.org/t/p/original/4RnCeRzvI1xk5tuNWjpDKzSnJDk.jpg",
+    "year": 1996,
+    "hasFile": false,
+    "profileId": 0,
+    "pathState": "dynamic",
+    "monitored": false,
+    "minimumAvailability": "tba",
+    "isAvailable": true,
+    "folderName": "",
+    "runtime": 0,
+    "tmdbId": 9614,
+    "titleSlug": "happy-gilmore-9614",
+    "genres": [],
+    "tags": [],
+    "added": "0001-01-01T00:00:00Z",
+    "ratings": {
+      "votes": 1101,
+      "value": 6.6
+    },
+    "qualityProfileId": 0
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "title": "Widows",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "widows",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "Set in contemporary Chicago, amidst a time of turmoil, four women with nothing in common except a debt left behind by their dead husbands' criminal activities take fate into their own hands and conspire to forge a future on their own terms.",
+    "inCinemas": "2018-11-09T05:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/205/poster.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/205/fanart.jpg"
+      }
+    ],
+    "website": "http://widowsmovie.com",
+    "downloaded": false,
+    "year": 2018,
+    "hasFile": false,
+    "youTubeTrailerId": "nN2yBBSRC78",
+    "studio": "New Regency Pictures",
+    "path": "/Volumes/Macintosh HD2/Downloads/movies/Widows (2018)",
+    "profileId": 1,
+    "pathState": "static",
+    "monitored": true,
+    "minimumAvailability": "announced",
+    "isAvailable": true,
+    "folderName": "/Volumes/Macintosh HD2/Downloads/movies/Widows (2018)",
+    "runtime": 128,
+    "lastInfoSync": "2018-10-27T16:34:31.768939Z",
+    "cleanTitle": "widows",
+    "imdbId": "tt4218572",
+    "tmdbId": 401469,
+    "titleSlug": "widows-401469",
+    "genres": [],
+    "tags": [],
+    "added": "2018-06-04T14:52:20.535169Z",
+    "ratings": {
+      "votes": 2,
+      "value": 0
+    },
+    "qualityProfileId": 1,
+    "id": 205
+  },
+  {
+    "title": "Ralph Breaks the Internet",
+    "alternativeTitles": [
+      {
+        "sourceType": "tmdb",
+        "movieId": 185,
+        "title": "Wreck-It Ralph 2",
+        "sourceId": 404368,
+        "votes": 0,
+        "voteCount": 0,
+        "language": "english",
+        "id": 110
+      }
+    ],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "ralph breaks internet",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "Taking place six years following the events of the first film, the story will center on Ralph's adventures in the Internet data space when a Wi-Fi router gets plugged into the arcade as he must find a replacement part to fix Sugar Rush.",
+    "inCinemas": "2018-11-20T05:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/185/poster.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/185/fanart.jpg"
+      }
+    ],
+    "website": "https://movies.disney.com/ralph-breaks-the-internet-wreck-it-ralph-2",
+    "downloaded": false,
+    "year": 2018,
+    "hasFile": false,
+    "youTubeTrailerId": "_BcYBFC6zfY",
+    "studio": "Walt Disney Pictures",
+    "path": "/Volumes/Macintosh HD2/Downloads/movies/Ralph Breaks the Internet Wreck-It Ralph 2 (2018)",
+    "profileId": 6,
+    "pathState": "static",
+    "monitored": true,
+    "minimumAvailability": "preDB",
+    "isAvailable": false,
+    "folderName": "/Volumes/Macintosh HD2/Downloads/movies/Ralph Breaks the Internet Wreck-It Ralph 2 (2018)",
+    "runtime": 0,
+    "lastInfoSync": "2018-10-27T16:34:30.761692Z",
+    "cleanTitle": "ralphbreaksinternet",
+    "imdbId": "tt5848272",
+    "tmdbId": 404368,
+    "titleSlug": "ralph-breaks-the-internet-404368",
+    "genres": [],
+    "tags": [],
+    "added": "2018-03-03T16:40:47.131785Z",
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "qualityProfileId": 6,
+    "id": 185
+  }
+]

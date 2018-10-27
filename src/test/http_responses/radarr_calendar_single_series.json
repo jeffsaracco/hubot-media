@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Widows",
+    "alternativeTitles": [],
+    "secondaryYearSourceId": 0,
+    "sortTitle": "widows",
+    "sizeOnDisk": 0,
+    "status": "announced",
+    "overview": "Set in contemporary Chicago, amidst a time of turmoil, four women with nothing in common except a debt left behind by their dead husbands' criminal activities take fate into their own hands and conspire to forge a future on their own terms.",
+    "inCinemas": "2018-11-09T05:00:00Z",
+    "images": [
+      {
+        "coverType": "poster",
+        "url": "/MediaCover/205/poster.jpg"
+      },
+      {
+        "coverType": "fanart",
+        "url": "/MediaCover/205/fanart.jpg"
+      }
+    ],
+    "website": "http://widowsmovie.com",
+    "downloaded": false,
+    "year": 2018,
+    "hasFile": false,
+    "youTubeTrailerId": "nN2yBBSRC78",
+    "studio": "New Regency Pictures",
+    "path": "/Volumes/Macintosh HD2/Downloads/movies/Widows (2018)",
+    "profileId": 1,
+    "pathState": "static",
+    "monitored": true,
+    "minimumAvailability": "announced",
+    "isAvailable": true,
+    "folderName": "/Volumes/Macintosh HD2/Downloads/movies/Widows (2018)",
+    "runtime": 128,
+    "lastInfoSync": "2018-10-27T16:34:31.768939Z",
+    "cleanTitle": "widows",
+    "imdbId": "tt4218572",
+    "tmdbId": 401469,
+    "titleSlug": "widows-401469",
+    "genres": [],
+    "tags": [],
+    "added": "2018-06-04T14:52:20.535169Z",
+    "ratings": {
+      "votes": 2,
+      "value": 0
+    },
+    "qualityProfileId": 1,
+    "id": 205
+  }
+]

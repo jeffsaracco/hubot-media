@@ -7,16 +7,8 @@ require('should');
 const path = require('path');
 const sinon = require('sinon');
 const sonarr = require('../scripts/sonarr.js');
-const request = require('supertest');
 const Helper = require('hubot-test-helper');
 const helper = new Helper('../scripts/hubot-sonarr.js');
-
-var notificationPOSTJSON = {
-  'test': {'EventType': 'Test', 'Message': 'This is testing the webhook'},
-  'grab': {'EventType': 'Grab', 'Series': {'Id': 2, 'Title': 'Gravity Falls', 'Path': 'C:\\Temp\\sonarr\\Gravity Falls', 'TvdbId': 259972}, 'Episodes': [{'Id': 67, 'EpisodeNumber': 14, 'SeasonNumber': 2, 'Title': 'The Stanchurian Candidate', 'AirDate': '2015-08-24', 'AirDateUtc': '2015-08-25T01:30:00Z', 'Quality': 'WEBDL-1080p', 'QualityVersion': 1, 'ReleaseGroup': 'iT00NZ', 'SceneName': null}]},
-  'download': {'EventType': 'Download', 'Series': {'Id': 2, 'Title': 'Gravity Falls', 'Path': 'C:\\Temp\\sonarr\\Gravity Falls', 'TvdbId': 259972}, 'Episodes': [{'Id': 67, 'EpisodeNumber': 14, 'SeasonNumber': 2, 'Title': 'The Stanchurian Candidate', 'AirDate': '2015-08-24', 'AirDateUtc': '2015-08-25T01:30:00Z', 'Quality': 'HDTV-720p', 'QualityVersion': 1, 'ReleaseGroup': null, 'SceneName': null}]},
-  'rename': {'EventType': 'Rename', 'Series': {'Id': 2, 'Title': 'Gravity Falls', 'Path': 'C:\\Temp\\sonarr\\Gravity Falls', 'TvdbId': 259972}, 'Episode': null}
-};
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -39,17 +31,17 @@ describe('hubot_sonarr', function () {
   describe('help', () => {
     it('all commands', () => {
       this.room.robot.helpCommands().should.eql([
-        '!searchTV <query> - Searches sonarrs sources to find information about a tv show',
-        '!tonightTV - Reports what should download in the upcoming day'
+        'media search tv <query> - Searches sonarrs sources to find information about a tv show',
+        'media upcoming tv - Reports what should download in the upcoming day'
       ]);
     });
   });
-  describe('!tonightTV', () => {
+  describe('media upcoming tv', () => {
     describe("shouldn't work inline", () => {
       it('output title', () => {
-        return this.room.user.say('Shell', 'aasdadasdasd !tonightTV').then(() => {
+        return this.room.user.say('Shell', 'aasdadasdasd media upcoming tv').then(() => {
           this.room.messages.should.eql([
-            ['Shell', 'aasdadasdasd !tonightTV']
+            ['Shell', 'aasdadasdasd media upcoming tv']
           ]);
         });
       });
@@ -59,10 +51,10 @@ describe('hubot_sonarr', function () {
         this.mock = sinon.mock(sonarr);
         this.mock.expects('fetchFromSonarr').once().rejects(new Error('Error 500'));
 
-        return this.room.user.say('Shell', '!tonightTV').then(() => sleep(1)).then(() => {
+        return this.room.user.say('Shell', '@hubot media upcoming tv').then(() => sleep(1)).then(() => {
           this.mock.verify();
           this.room.messages.should.eql([
-            ['Shell', '!tonightTV'],
+            ['Shell', '@hubot media upcoming tv'],
             ['hubot', 'Encountered an error :( Error: Error 500']
           ]);
         });
@@ -73,15 +65,13 @@ describe('hubot_sonarr', function () {
         this.mock = sinon.mock(sonarr);
         this.mock.expects('fetchFromSonarr').once().resolves([]);
 
-        return this.room.user.say('Shell', '!tonightTV')
-          .then(() => sleep(10))
-          .then(() => {
-            this.mock.verify();
-            this.room.messages.should.eql([
-              ['Shell', '!tonightTV'],
-              ['hubot', 'Upcoming shows:\n']
-            ]);
-          });
+        return this.room.user.say('Shell', '@hubot media upcoming tv').then(() => sleep(1)).then(() => {
+          this.mock.verify();
+          this.room.messages.should.eql([
+            ['Shell', '@hubot media upcoming tv'],
+            ['hubot', 'Upcoming shows:\n']
+          ]);
+        });
       });
     });
     describe('single response', () => {
@@ -90,12 +80,12 @@ describe('hubot_sonarr', function () {
         this.mock.expects('fetchFromSonarr').once().resolves(
           require(path.join(__dirname, '/http_responses/calendar_single_series.json'))
         );
-        return this.room.user.say('Shell', '!tonightTV')
+        return this.room.user.say('Shell', '@hubot media upcoming tv')
           .then(() => sleep(10))
           .then(() => {
             this.mock.verify();
             this.room.messages.should.eql([
-              ['Shell', '!tonightTV'],
+              ['Shell', '@hubot media upcoming tv'],
               ['hubot', "Upcoming shows:\nBob's Burgers - Easy Com-mercial, Easy Go-mercial"]
             ]);
           });
@@ -107,12 +97,12 @@ describe('hubot_sonarr', function () {
         this.mock.expects('fetchFromSonarr').once().resolves(
           require(path.join(__dirname, '/http_responses/calendar_multiple_series.json'))
         );
-        return this.room.user.say('Shell', '!tonightTV')
+        return this.room.user.say('Shell', '@hubot media upcoming tv')
           .then(() => sleep(10))
           .then(() => {
             this.mock.verify();
             this.room.messages.should.eql([
-              ['Shell', '!tonightTV'],
+              ['Shell', '@hubot media upcoming tv'],
               ['hubot', 'Upcoming shows:\nExtant - The Other Side,\n' +
                 ' Mr. Robot - eps1.8_m1rr0r1ng.qt,\n Why? With Hannibal Buress - Episode 7']
             ]);
@@ -121,13 +111,13 @@ describe('hubot_sonarr', function () {
     });
   });
 
-  describe('!searchTV batman', () => {
+  describe('@hubot media search tv batman', () => {
     it("shouldn't work inline", () => {
-      return this.room.user.say('Shell', 'aasdadasdasd !searchTV batman')
+      return this.room.user.say('Shell', 'aasdadasdasd @hubot media search tv batman')
         .then(() => sleep(10))
         .then(() => {
           this.room.messages.should.eql([
-            ['Shell', 'aasdadasdasd !searchTV batman']
+            ['Shell', 'aasdadasdasd @hubot media search tv batman']
           ]);
         });
     });
@@ -135,12 +125,12 @@ describe('hubot_sonarr', function () {
       this.mock = sinon.mock(sonarr);
       this.mock.expects('fetchFromSonarr').once().rejects(new Error('Error 500'));
 
-      return this.room.user.say('Shell', '!searchTV batman')
+      return this.room.user.say('Shell', '@hubot media search tv batman')
         .then(() => sleep(10))
         .then(() => {
           this.mock.verify();
           this.room.messages.should.eql([
-            ['Shell', '!searchTV batman'],
+            ['Shell', '@hubot media search tv batman'],
             ['hubot', 'Encountered an error :( Error: Error 500']
           ]);
         });
@@ -150,12 +140,12 @@ describe('hubot_sonarr', function () {
       this.mock.expects('fetchFromSonarr').once().resolves(
         require(path.join(__dirname, '/http_responses/series_lookup_empty.json'))
       );
-      return this.room.user.say('Shell', '!searchTV batman')
+      return this.room.user.say('Shell', '@hubot media search tv batman')
         .then(() => sleep(10))
         .then(() => {
           this.mock.verify();
           this.room.messages.should.eql([
-            ['Shell', '!searchTV batman'],
+            ['Shell', '@hubot media search tv batman'],
             ['hubot', 'No results found for [batman]']
           ]);
         });
@@ -165,12 +155,12 @@ describe('hubot_sonarr', function () {
       this.mock.expects('fetchFromSonarr').once().resolves(
         require(path.join(__dirname, '/http_responses/series_lookup_single.json'))
       );
-      return this.room.user.say('Shell', '!searchTV batman')
+      return this.room.user.say('Shell', '@hubot media search tv batman')
         .then(() => sleep(10))
         .then(() => {
           this.mock.verify();
           this.room.messages.should.eql([
-            ['Shell', '!searchTV batman'],
+            ['Shell', '@hubot media search tv batman'],
             [
               'hubot',
               'Results for [batman]:\nthe-blacklist) The Blacklist - ' +
@@ -184,12 +174,12 @@ describe('hubot_sonarr', function () {
       this.mock.expects('fetchFromSonarr').once().resolves(
         require(path.join(__dirname, '/http_responses/series_lookup_batman.json'))
       );
-      return this.room.user.say('Shell', '!searchTV batman')
+      return this.room.user.say('Shell', '@hubot media search tv batman')
         .then(() => sleep(10))
         .then(() => {
           this.mock.verify();
           this.room.messages.should.eql([
-            ['Shell', '!searchTV batman'],
+            ['Shell', '@hubot media search tv batman'],
             ['hubot', 'Results for [batman]:\n' +
               [
                 'batman) Batman - http://www.imdb.com/title/tt0059968 - http://thetvdb.com/?tab=series&id=77871',
@@ -202,74 +192,6 @@ describe('hubot_sonarr', function () {
               ].join(', \n')
             ]
           ]);
-        });
-    });
-  });
-  describe('Sonarr Webhook', () => {
-    it('Test Action', (done) => {
-      request(this.room.robot.router)
-        .post('/hubot/sonarr/' + this.room.robot.adapter.name)
-        .set('Content-Type', 'application/json')
-        .send(notificationPOSTJSON.test)
-        .expect(200)
-        .end(() => {
-          this.room.messages.should.eql([
-            ['hubot', 'Now Tested: This is testing the webhook']
-          ]);
-          done();
-        });
-    });
-    it('Downloaded Action', (done) => {
-      request(this.room.robot.router)
-        .post('/hubot/sonarr/' + this.room.robot.adapter.name)
-        .set('Content-Type', 'application/json')
-        .send(notificationPOSTJSON.download)
-        .expect(200)
-        .end(() => {
-          this.room.messages.should.eql([
-            ['hubot', 'Now Downloading Gravity Falls: S02E14 - The Stanchurian Candidate [HDTV-720p]']
-          ]);
-          done();
-        });
-    });
-    it('Rename Action', (done) => {
-      request(this.room.robot.router)
-        .post('/hubot/sonarr/' + this.room.robot.adapter.name)
-        .set('Content-Type', 'application/json')
-        .send(notificationPOSTJSON.rename)
-        .expect(200)
-        .end(() => {
-          this.room.messages.should.eql([
-            ['hubot', 'Now Renameing Gravity Falls']
-          ]);
-          done();
-        });
-    });
-    it('Grabbed Action', (done) => {
-      request(this.room.robot.router)
-        .post('/hubot/sonarr/' + this.room.robot.adapter.name)
-        .set('Content-Type', 'application/json')
-        .send(notificationPOSTJSON.grab)
-        .expect(200)
-        .end(() => {
-          this.room.messages.should.eql([
-            ['hubot', 'Now Grabing Gravity Falls: S02E14 - The Stanchurian Candidate [WEBDL-1080p]']
-          ]);
-          done();
-        });
-    });
-    it('Grabbed Action - Multi Channel Mode', (done) => {
-      request(this.room.robot.router)
-        .post('/hubot/sonarr/' + this.room.robot.adapter.name + '?multiRoom=true')
-        .set('Content-Type', 'application/json')
-        .send(notificationPOSTJSON.grab)
-        .expect(200)
-        .end(() => {
-          // FIXME - spy on this.room.messages.send and see what param 1's room is
-          this.room.messages.should.eql([
-            ['hubot', 'Now Grabing Gravity Falls: S02E14 - The Stanchurian Candidate [WEBDL-1080p]'] // random
-          ]);
-          done();
         });
     });
   });
