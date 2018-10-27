@@ -1,19 +1,17 @@
 {
-  "name": "hubot-sonarr",
+  "name": "hubot-media",
   "description": "Simple hubot script that grabs a url and outputs the title.",
   "version": "0.1.1",
-  "homepage": "https://github.com/halkeye/hubot-sonarr",
+  "homepage": "https://github.com/jeffsaracco/hubot-media",
   "author": {
-    "name": "Gavin Mogan",
-    "email": "gavin@kodekoan.com",
-    "url": "http://www.kodekoan.com"
+    "name": "Jeff Saracco"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/halkeye/hubot-sonarr.git"
+    "url": "git://github.com/jeffsaracco/hubot-media.git"
   },
   "bugs": {
-    "url": "https://github.com/halkeye/hubot-sonarr/issues"
+    "url": "https://github.com/jeffsaracco/hubot-media/issues"
   },
   "license": "MIT",
   "main": "index.js",
